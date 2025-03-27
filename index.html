@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Sincere Apology</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes heartBeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        .heart-animation {
+            animation: heartBeat 1s infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-pink-100 to-pink-200 min-h-screen flex items-center justify-center">
+    <div class="bg-white p-10 rounded-xl shadow-2xl text-center max-w-2xl">
+        <h1 class="text-4xl font-bold text-pink-600 mb-6">I'm Truly Sorry</h1>
+        
+        <div class="mb-8">
+            <svg class="mx-auto w-24 h-24 text-red-500 heart-animation" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+            </svg>
+        </div>
+
+        <p class="text-xl text-gray-700 mb-6">
+            I know I've hurt you, and I am deeply sorry. My actions have caused you pain, and I take full responsibility for my mistakes. 
+            You deserve so much better, and I want to make things right.
+        </p>
+
+        <div class="bg-pink-50 p-6 rounded-lg mb-6">
+            <h2 class="text-2xl font-semibold text-pink-700 mb-4">My Commitments to You</h2>
+            <ul class="text-left text-gray-600 space-y-3">
+                <li>• I will listen more carefully and attentively</li>
+                <li>• I promise to be more considerate of your feelings</li>
+                <li>• I am committed to earning back your trust</li>
+                <li>• I will work every day to be a better partner</li>
+            </ul>
+        </div>
+
+        <p class="text-lg italic text-gray-600 mb-8">
+            "I'm not perfect, but I'm willing to always try to be better for you."
+        </p>
+
+    <script>
+        function showMessage() {
+            const hiddenMessage = document.getElementById('hiddenMessage');
+            hiddenMessage.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
